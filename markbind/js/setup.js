@@ -9,6 +9,15 @@ function setup() {
   VueStrap.installEvents(vm);
 }
 
+let baseUrl;
+
+// environment check
+if (window.location.href.includes('github')) {
+  baseUrl = window.location.origin + '/website/';
+} else {
+  baseUrl = window.location.origin;
+}
+
 function setupWithSearch(siteData) {
   const { typeahead } = VueStrap.components;
   const vm = new Vue({
@@ -29,13 +38,13 @@ function setupWithSearch(siteData) {
     },
     methods: {
       searchCallback(match) {
-        window.location.pathname = match.src.replace('.md', '.html');
+        window.location = baseUrl + match.src.replace('.md', '.html');
       },
     },
   });
   VueStrap.installEvents(vm);
 }
 
-jQuery.getJSON(window.location +'siteData.json')
+jQuery.getJSON(`${baseUrl}siteData.json`)
   .then(siteData => setupWithSearch(siteData))
   .catch(() => setup());
