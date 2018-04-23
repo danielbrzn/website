@@ -36,6 +36,6 @@ function setupWithSearch(siteData) {
   VueStrap.installEvents(vm);
 }
 
-jQuery.getJSON('../../siteData.json')
+jQuery.getJSON('siteData.json')
   .then(siteData => setupWithSearch(siteData))
   .catch(() => setup());
