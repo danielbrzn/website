@@ -1,5 +1,6 @@
 <frontmatter>
 title: "CS3281 and CS3281 Schedule"
+keywords: "sched, sem2"
 </frontmatter>
 
 <link rel="stylesheet" href="{{baseUrl}}/css/main.css">

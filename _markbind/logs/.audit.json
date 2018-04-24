@@ -1,0 +1,59 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 2
+    },
+    "auditLog": "_markbind\\logs/.audit.json",
+    "files": [
+        {
+            "date": 1524484056132,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "d506945d366dcdc48004586e06b94426"
+        },
+        {
+            "date": 1524484402634,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "d22f8eefde8cff6607349228e9fbae1a"
+        },
+        {
+            "date": 1524484459133,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "105be4d5c8186c364b80b9a3489c68b7"
+        },
+        {
+            "date": 1524485998593,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "da9dc51eb1af50bd474221b9139dc726"
+        },
+        {
+            "date": 1524492337925,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "b43451a2d8e262dbbf5fdf86f278471a"
+        },
+        {
+            "date": 1524494323958,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "dd997088aae73ec1f738da7ca182bfa3"
+        },
+        {
+            "date": 1524494679430,
+            "name": "_markbind\\logs\\markbind-2018-04-23.log",
+            "hash": "b11f74ceacdcb3109dc647810c861438"
+        },
+        {
+            "date": 1524562617630,
+            "name": "_markbind\\logs\\markbind-2018-04-24.log",
+            "hash": "52395d100aba0fffbb96f0fc9b3001b5"
+        },
+        {
+            "date": 1524562636020,
+            "name": "_markbind\\logs\\markbind-2018-04-24.log",
+            "hash": "deaac252f2f5392ad8b611ada0796130"
+        },
+        {
+            "date": 1524567519014,
+            "name": "_markbind\\logs\\markbind-2018-04-24.log",
+            "hash": "ead787828922687fa7918f44607240a9"
+        }
+    ]
+}

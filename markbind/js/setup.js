@@ -1,23 +1,26 @@
 /* eslint-disable no-undef */
-
-Vue.use(VueStrap);
+Vue.config.devtools = true;
 
 function setup() {
+  Vue.use(VueStrap);
   const vm = new Vue({
     el: '#app',
   });
   VueStrap.installEvents(vm);
 }
 
-let baseUrl = window.location.origin;
+let baseUrl = '';
 
-// environment check
-if (window.location.href.includes('github.io')) {
-  baseUrl = `${baseUrl}/website`;
+// Support gh-pages
+if (window.location.origin.endsWith('github.io')) {
+  const repository = window.location.pathname.split('/')[1];
+  baseUrl = `/${repository}`;
 }
 
 function setupWithSearch(siteData) {
   const { typeahead } = VueStrap.components;
+  Vue.use(VueStrap);
+
   const vm = new Vue({
     el: '#app',
     components: {

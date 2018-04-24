@@ -11,8 +11,9 @@
     <li><a href="https://docs.google.com/document/d/1I67ovHJp7ES96YupZyiuvVuVlqC5t5qimLduOH8MCF0/edit?usp=sharing" target="_blank">Project Ideas</a></li>
   </dropdown> 
   <li slot="right">
-    <form class="navbar-form">
-        <typeahead :data="searchData" placeholder="Search" :template="titleTemplate" template-name="title" :on-hit="searchCallback"></typeahead>  
-    </form>
-  </li>  
+  <form class="navbar-form">
+    <typeahead :data="searchData" placeholder="Search" :template="titleTemplate" template-name="title" :on-hit="searchCallback" ></typeahead> 
+  </form>
+</li>
+
 </navbar>
